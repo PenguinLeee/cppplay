@@ -1,0 +1,11 @@
+CMAKE_MINIMUM_REQUIRED(VERSION 3.10)
+
+Project(AdvClass VERSION 1.0)
+
+set(CMAKE_CXX_STANDARD 11)
+set(CMAKE_CXX_STANDARD_REQUIRED True)
+
+ADD_EXECUTABLE(AdvClass 
+                point.cpp
+                circle.cpp
+)
