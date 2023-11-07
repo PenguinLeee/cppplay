@@ -9,9 +9,12 @@
 
 Chap 10 面向对象和类
 1. struct 和 class
-2. 初始化表init table
+2. 初始化表init table，初始化 const 成员变量的唯一方法就是使用初始化列表
 3. 默认构造函数 —— 无参，且仅在不定义构造函数的时候
 4. 析构函数
 5. <a href=https://blog.csdn.net/qq_43519886/article/details/105170209>拷贝构造函数</a> —— 什么时候使用？
 6. 类的组合
-7. 友元：不能传递
+7. 友元函数和友元类：单向的、不能传递的
+8. 静态成员：在类的声明中只会对静态数据成员做引用性声明，需要通过类名访问/初始化。a member with an in-class initializer must be const.static 成员变量不占用对象的内存，而是在所有对象之外开辟内存，即使不创建对象也可以访问。具体来说，static 成员变量和普通的 static 变量类似，都在内存分区中的全局数据区分配内存
+9. 常对象和常函数：const加在前面和后面都是什么意思？
+
