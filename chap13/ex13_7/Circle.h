@@ -13,7 +13,7 @@ private:
     int radius;
 public:
     Circle(const Point& p, int r, char* color): center(p), radius(r), Shape(color) {}
-    virtual void draw() {}
+    virtual void draw() {cout << "Draw a circle with center (" << center.getX() << ", " << center.getY() << ") and radius " << radius << "with color "; outputColor(); }
 };
 
 #endif

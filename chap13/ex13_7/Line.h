@@ -13,7 +13,7 @@ private:
     Point end;
 public:
     Line(const Point &s, const Point &e, char* c): start(s), end(e), Shape(c) {}
-    void draw() {cout << "draw a line from " << "("<< start.getX() << ", " << start.getY() << ")" << " to " << "("<< start.getX() << ", " << start.getY() << ")" << endl << "with color";outputColor();}
+    void draw() {cout << "draw a line from " << "("<< start.getX() << ", " << start.getY() << ")" << " to " << "("<< start.getX() << ", " << start.getY() << ") with color";outputColor();}
 };
 
 #endif
